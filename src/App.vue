@@ -1,7 +1,12 @@
 <template>
 	<div id="app">
+		<nav>
+			<router-link to="/">Menu</router-link>  |
+			<router-link to="/vart-kaffe">Vårt kaffe</router-link>
+		</nav>
 		<img src="./assets/logo.svg" alt="logo">
-	<HelloWorld msg="Welcome to Airbean App" />
+		<hello-world msg="Welcome to Airbean App" />
+		<router-view />
 	</div>
 </template>
 
@@ -24,5 +29,18 @@
 		text-align: center;
 		color: #2c3e50;
 		margin-top: 60px;
+	}
+
+	nav {
+		padding: 30px;
+
+		a {
+			font-weight: bold;
+			color: #2c3e50;
+
+			&.router-link-exact-active {
+			color: #42b983;
+			}
+		}
 	}
 </style>
