@@ -1,22 +1,26 @@
 <template>
 	<div id="app">
-		<main-nav />
 		<router-view />
 	</div>
 </template>
 
 <script>
-	import MainNav from './components/MainNav.vue';
-
 	export default {
-		name: "App",
-		components: {
-			MainNav
-		}
+		
 	};
 </script>
 
 <style lang="scss">
+	@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Work+Sans&display=swap');
+
+	h1, h2, h3, h4 {
+		font-family: 'PT Serif', serif;
+	}
+
+	p {
+		font-family: 'Work Sans', sans-serif;
+	}
+	
 	body {
 		display: flex;
 		justify-content: center;
@@ -35,18 +39,12 @@
 		flex-direction: column;
 		align-items: center;
 		margin: 0;
-		}
+		position: relative;
+	}
 
-	nav {
-		padding: 30px;
-
-		a {
-			font-weight: bold;
-			color: #2c3e50;
-
-			&.router-link-exact-active {
-			color: #42b983;
-			}
-		}
+	.nav {
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 </style>

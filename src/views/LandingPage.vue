@@ -1,8 +1,8 @@
 <template>
-	<main>
+	<router-link to="/vart-kaffe" tag="main">
 		<img src="../assets/logo.svg" alt="logo">
 		<img src="../assets/nameLogo.svg" alt="Air Bean">
-	</main>
+	</router-link>
 	
 </template>
 
@@ -22,5 +22,6 @@ export default {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		cursor: pointer;
 	}
 </style>
