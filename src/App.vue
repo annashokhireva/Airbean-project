@@ -1,27 +1,27 @@
 <template>
 	<div id="app">
-		<nav>
-			<router-link to="/">Menu</router-link>  |
-			<router-link to="/vart-kaffe">Vårt kaffe</router-link>
-		</nav>
-		<img src="./assets/logo.svg" alt="logo">
-		<hello-world msg="Welcome to Airbean App" />
+		<main-nav />
 		<router-view />
 	</div>
 </template>
 
 <script>
-	import HelloWorld from "./components/HelloWorld.vue";
+	import MainNav from './components/MainNav.vue';
 
 	export default {
 		name: "App",
 		components: {
-			HelloWorld
+			MainNav
 		}
 	};
 </script>
 
 <style lang="scss">
+	body {
+		display: flex;
+		justify-content: center;
+	}
+
 	#app {
 		font-family: Avenir, Helvetica, Arial, sans-serif;
 		-webkit-font-smoothing: antialiased;
@@ -29,7 +29,13 @@
 		text-align: center;
 		color: #2c3e50;
 		margin-top: 60px;
-	}
+		width: 375px;
+		height: 667px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+		}
 
 	nav {
 		padding: 30px;
