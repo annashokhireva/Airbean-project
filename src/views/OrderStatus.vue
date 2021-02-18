@@ -7,7 +7,9 @@
 			<b>{{ countDown }}</b> minuter
 		</p>
 		<button class="white">
-			<h4>Ok, cool!</h4>
+			<router-link to="/menu">
+				<h4>Ok, cool!</h4>
+			</router-link>
 		</button>
 	</main>
 </template>
@@ -65,5 +67,15 @@ export default {
 
 	button {
 		margin: 20% 0;
+
+		a {
+			text-decoration: none;
+			color: black;
+
+			&.router-link-exact-active {
+				text-decoration: none;
+				color: black;
+			}
+		}
 	}
 </style>

@@ -5,9 +5,16 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
 	state: {
-		showNav: false
+		navVissible: false
 	},
-	mutations: {},
+	mutations: {
+		showNav(state){
+			state.navVissible = true;
+		},
+		hideNav(state){
+			state.navVissible = false;
+		}
+	},
 	actions: {},
 	modules: {}
 });
