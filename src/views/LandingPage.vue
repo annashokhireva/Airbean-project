@@ -1,5 +1,5 @@
 <template>
-	<router-link to="/vart-kaffe" tag="main">
+	<router-link to="/menu" tag="main">
 		<img src="../assets/logo.svg" alt="logo">
 		<img src="../assets/nameLogo.svg" alt="Air Bean">
 	</router-link>

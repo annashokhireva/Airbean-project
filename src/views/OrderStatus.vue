@@ -1,11 +1,14 @@
 <template>
 	<main>
-		<p>Ordernummer "order.id"</p>
+		<p class="order">Ordernummer "order.id"</p>
 		<img src="../assets/drone.svg" alt="Drone with coffee">
 		<h3>Din beställning är på väg!</h3>
 		<p class="countdown">
 			<b>{{ countDown }}</b> minuter
 		</p>
+		<button class="white">
+			<h4>Ok, cool!</h4>
+		</button>
 	</main>
 </template>
 
@@ -46,12 +49,13 @@ export default {
 
 	h3 {
 		font-size: $h_normal;
-		margin: 15% 15% 10%;
+		margin: 15% 15% 5%;
 	}
 
-	p {
-		font-size: 12px;
+	p.order {
+		font-size: 16px;
 		margin: 20% 0 15%;
+		color:rgba(255, 255, 255, 0.7)
 	}
 
 	p.countdown {
@@ -59,4 +63,7 @@ export default {
 		margin: 0;
 	}
 
+	button {
+		margin: 20% 0;
+	}
 </style>
