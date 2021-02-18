@@ -10,11 +10,11 @@
 					<h2>{{ link.text }}</h2>
 				</router-link>
 			</li>
-			<div class="lines">
+			<!-- <div class="lines">
 				<div class="line"></div>
 				<div class="line"></div>
 				<div class="line"></div>
-			</div>
+			</div> -->
 			
 		</ul>
 
@@ -72,6 +72,7 @@
 			list-style: none;
 			padding: 0;
 			position: relative;
+			z-index: 1;
 		}
 
 		a {
@@ -100,19 +101,19 @@
 		font-size: $h_normal;	
 	}
 
-	.lines {
-		display: flex;
-		flex-direction: column;
-		height: 220px;
-		width: 100%;
-		position: absolute;
-		top: 15%;
+	// .lines {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	height: 220px;
+	// 	width: 100%;
+	// 	position: absolute;
+	// 	top: 15%;
 
-		.line {
-			margin: auto;
-			width: 48px;
-			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-		}
-	}
+	// 	.line {
+	// 		margin: auto;
+	// 		width: 48px;
+	// 		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	// 	}
+	// }
 	
 </style>
