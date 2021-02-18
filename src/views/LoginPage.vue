@@ -5,7 +5,11 @@
 		<container class="registration-form">
 			<h2>Välkommen till AirBean-familjen!</h2>	
 			<p>Genom att skapa ett konto nedan kan du spara och se din orderhistorik.</p>
-			<button class="register">Brew me a cup!</button>
+			<button type="submit" class="register">Brew me a cup!</button>
+				<form action="/action_page.php">
+					<input type="checkbox" id="validation" name="gdpr" value="Submit">
+					<label for="val">GDPR</label><br>
+				</form>
 		</container>
   </section>
 </template>
@@ -17,8 +21,11 @@ import MainHeader from '../components/MainHeader';
 export default {
 	components: { 
 		MainHeader,
+		
 	},
-}
+  }
+
+
 </script>
 
 
@@ -55,7 +62,7 @@ export default {
 
 	.register {
 		background-color: $airbean_brown;
-		border-radius: 20px;
+		border-radius: 30px;
 		font-size: 24px ;
 		color: white;
 		padding: 5px px 5px 10px;
