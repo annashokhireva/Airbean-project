@@ -8,7 +8,7 @@
 		<span></span>
 		<h2><router-link to="/vart-kaffe">Vårt kaffe</router-link></h2>
 		<span></span>
-		<h2><router-link to="/Login">Logga in</router-link></h2>
+		<h2><router-link to="/Login">Min Profil</router-link></h2>
 		<span></span>
 		<h2><router-link to="/order-status">Orderstatus</router-link></h2>
 	</nav>
