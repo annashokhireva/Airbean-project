@@ -1,9 +1,9 @@
 <template>
 	<header>
 		<div class="menu-btns">
-			<img src="../assets/navicon.svg" alt="menu button" @click="showMenu">
+			<img src="../assets/navicon.svg" alt="menu button" @click="showNav">
 			<shopping-bag v-if="showBag"/>
-			<main-nav v-if="showNav" class="nav"/>
+			<main-nav v-if="visible" class="nav"/>
 		</div>
 	</header>
 </template>
@@ -11,17 +11,14 @@
 <script>
 import ShoppingBag from './ShoppingBag.vue';
 import MainNav from './MainNav.vue';
+import { mapMutations } from 'vuex';
+import { mapState } from 'vuex';
+
 
 export default {
 	components: { 
 		ShoppingBag,
 		MainNav 
-	},
-
-	data() {
-		return {
-			showNav: false
-		}
 	},
 
 	props: {
@@ -31,11 +28,17 @@ export default {
 		}
 	},
 
+	computed: {
+		...mapState({
+			visible: 'navVissible',
+		}),
+	},
+
 	methods: {
-		showMenu: function() {
-			this.showNav = true;
-		}
-	}
+		...mapMutations([
+			'showNav',
+		]),
+	},
 }
 </script>
 
