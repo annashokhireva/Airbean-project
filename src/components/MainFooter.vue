@@ -1,6 +1,6 @@
 <template>
     <footer>
-		<img src="../assets/footer.svg" class="fix">
+		<img src="../assets/footer.svg">
     </footer>
 </template>
 
@@ -12,11 +12,8 @@ export default {
 
 <style>
 	footer {
-		background-image: url("../assets/footer.svg");
-		background-size: 100%;
-		background-repeat: no-repeat;
 		width: 100%;
-		min-height: 113px;
+		height: 73px;
         padding-bottom: 0%;     
        
 	}

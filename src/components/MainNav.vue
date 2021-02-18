@@ -4,13 +4,13 @@
 			<img src="../assets/close.svg" alt="close button">
 		</div>
 		
-		<h2><router-link to="/">landning</router-link></h2>
-		<span></span>
 		<h2><router-link to="/menu">Menu</router-link></h2>
 		<span></span>
 		<h2><router-link to="/vart-kaffe">Vårt kaffe</router-link></h2>
 		<span></span>
-		<h2><router-link to="/Login">Logga in</router-link></h2>
+		<h2><router-link to="/min-profil">Min Profil</router-link></h2>
+		<span></span>
+		<h2><router-link to="/order-status">Orderstatus</router-link></h2>
 	</nav>
 </template>
 
@@ -50,7 +50,7 @@
 		width: 100%;
 		display: flex;
 		justify-content: flex-start;
-		margin-bottom: 30%;
+		margin-bottom: 20%;
 
 		img {
 			margin: 8% 5%;
