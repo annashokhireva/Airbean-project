@@ -3,7 +3,7 @@
 <div id="MenuPage">
 
 	<div class="product-menu">
-		<main-header />
+		<main-header :show-bag="true"/>
 			<h1>Meny </h1>
 			<h1>Count - {{count}}</h1>
 		<button @click="increment">Increment</button>
@@ -59,7 +59,7 @@ export default {
 	}
 	
 	p {
-		font-size: $para;
+		font-size: 14px;
 	}
 
 
