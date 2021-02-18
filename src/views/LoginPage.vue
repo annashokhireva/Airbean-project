@@ -44,7 +44,7 @@ export default {
 	}
 
 	p {
-		font-size: $para;
+		font-size: 14px;
 	}
 
 	h3 {
