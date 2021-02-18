@@ -5,8 +5,9 @@
 	<div class="product-menu">
 		<main-header />
 			<h1>Meny </h1>
-			<h1>Count - {{count}}</h1>
-		<button @click="increment">Increment</button>
+			<coffee-types />
+			<!-- <h1>Count - {{count}}</h1>
+		<button @click="increment">Increment</button> -->
 	
 		<main-footer />	
 	</div>
@@ -18,11 +19,13 @@
 
 import MainHeader from '../components/MainHeader';
 import MainFooter from '../components/MainFooter';
+import CoffeeTypes from '../components/CoffeeTypes';
 
 export default {
 	components: { 
 		MainHeader,
 		MainFooter,
+		CoffeeTypes
 	},
 }
 </script>
