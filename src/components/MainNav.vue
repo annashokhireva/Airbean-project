@@ -9,6 +9,8 @@
 		<h2><router-link to="/menu">Menu</router-link></h2>
 		<span></span>
 		<h2><router-link to="/vart-kaffe">Vårt kaffe</router-link></h2>
+		<span></span>
+		<h2><router-link to="/Login">Logga in</router-link></h2>
 	</nav>
 </template>
 
