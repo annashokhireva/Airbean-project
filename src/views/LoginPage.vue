@@ -1,20 +1,13 @@
 <template>
-  
   <section class="body">
     <main-header />
+	
 		<container class="registration-form">
 			<h2>Välkommen till AirBean-familjen!</h2>	
 			<p>Genom att skapa ett konto nedan kan du spara och se din orderhistorik.</p>
-			<button class="register">Brew me a cup!</button>	
-			<ValidationCheckbox
-				type="checkbox"
-				label="GDPR"
-				name="terms"
-				validation="accepted"
-			/>
+			<button class="register">Brew me a cup!</button>
 		</container>
   </section>
-	
 </template>
 
 <script>
@@ -26,8 +19,6 @@ export default {
 		MainHeader,
 	},
 }
-
-
 </script>
 
 
@@ -67,7 +58,7 @@ export default {
 		border-radius: 20px;
 		font-size: 24px ;
 		color: white;
-		padding: 5px 10px 5px 10px;
+		padding: 5px px 5px 10px;
 		font-family: PT serif;
 	}
 
