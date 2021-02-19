@@ -6,13 +6,7 @@
 		<img src="../assets/bag.svg" alt="shopping bag">
 
 		<ul v-if="showBag" class="bag-view">
-			<!-- <li v-for="item in items" :key="item.itemId">
-				<img :src="item.variants[item.selectedVariant].variantImage" alt="item.productName" class="mini-image">
-				<div class="product-info">    
-					<h4>{{ item.brand + ' ' + item.productName }}</h4>
-					<p>{{ item.price }} kr</p>
-				</div>
-			</li> -->
+			<li></li>
 		</ul>
 	</div>
 	
