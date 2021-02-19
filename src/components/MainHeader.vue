@@ -30,7 +30,7 @@ export default {
 
 	computed: {
 		...mapState({
-			visible: 'navVissible',
+			visible: 'navVisible',
 		}),
 	},
 

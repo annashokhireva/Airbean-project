@@ -67,15 +67,5 @@ export default {
 
 	button {
 		margin: 20% 0;
-
-		a {
-			text-decoration: none;
-			color: black;
-
-			&.router-link-exact-active {
-				text-decoration: none;
-				color: black;
-			}
-		}
 	}
 </style>

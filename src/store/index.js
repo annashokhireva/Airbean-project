@@ -6,14 +6,18 @@ Vue.use(Vuex);
 export default new Vuex.Store({
 	state: {
 		bagItems: ['test item', 'test item'],
-		navVissible: false
+		navVisible: false,
+		bagVisible: false
 	},
 	mutations: {
 		showNav(state){
-			state.navVissible = true;
+			state.navVisible = true;
 		},
 		hideNav(state){
-			state.navVissible = false;
+			state.navVisible = false;
+		},
+		toggleBag(state) {
+			state.bagVisible = !state.bagVisible;
 		}
 	},
 	actions: {},

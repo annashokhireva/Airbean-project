@@ -1,26 +1,55 @@
 @import './variables';
 
 button{ 
-    border-radius: 50px;
-    border: none;
-    width: fit-content;
-    height: 55px;
-    padding: 0 10%;
-    cursor: pointer;
+	border-radius: 50px;
+	border: none;
+	min-width: 184px;
+	width: fit-content;
+	height: 55px;
+	padding: 4% 10%;
+	cursor: pointer;
+}
 
-    .brown {
-        color: white;
-        background-color: $airbean_brown;
-    }
+.brown {
+		
+	background-color: $airbean_brown;
 
-    .white {
-        color: black;
-        background-color: white;
-    }
+	h4 {
+		font-size: $h_small;
+		line-height: $h_small;
+		margin: 0;
+		color: white;
+	}
 
-    h4 {
-        font-size: $h_small;
-        margin: 0;
-    }
+	a {
+		text-decoration: none;
+		color: white;
+
+		&.router-link-exact-active {
+			text-decoration: none;
+			color: white;
+		}
+	}
+}
+
+.white {
+	background-color: white;
+
+	h4 {
+		font-size: $h_small;
+		line-height: $h_small;
+		margin: 0;
+		color: $airbean_brown;
+	}
+
+	a {
+		text-decoration: none;
+		color: $airbean_brown;
+
+		&.router-link-exact-active {
+			text-decoration: none;
+			color: $airbean_brown;
+		}
+	}
 }
 

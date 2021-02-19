@@ -30,7 +30,6 @@
 				<h3>Eva Cortado</h3>
 				<p>VD & Grundare</p>
 			</div>
-			
 		</main>
 
 		<footer>

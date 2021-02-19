@@ -1,11 +1,11 @@
 <template>
 
-	<div class="product-menu">
+	<div class="product-menu" >
 		<main-header :showBag="true"/>
 		<main>
 			<h1>Meny </h1>
 			<h1>Count - {{count}}</h1>
-			<button @click="increment">Increment</button>
+			<button class="white" @click="increment">Increment</button>
 		</main>
 			
 	
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-
+import { mapState } from 'vuex';
 import MainHeader from '../components/MainHeader';
 import MainFooter from '../components/MainFooter';
 
@@ -23,6 +23,12 @@ export default {
 	components: { 
 		MainHeader,
 		MainFooter,
+	},
+
+	computed: {
+		...mapState({
+			visible: 'bagVisible',
+		}),
 	},
 }
 </script>
