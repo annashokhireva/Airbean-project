@@ -1,10 +1,19 @@
 <template>
-    <div>
-      <div v-for="coffee in coffeeTypes" :key="coffee.id">
-          <h2>{{coffee.type}}</h2>
-          <p>{{coffee.price}}</p>
-          <p>{{coffee.info}}</p>
-      </div>
+    <div class="menu-container">
+      <ul class="menu-list"> 
+      <li class="menu-item" v-for="coffee in coffeeTypes" :key="coffee.id">
+          <div class="wrap">
+            <img src="../assets/add.svg" alt="add" width="64px" height="64px">  
+            <div class="type-price">
+                <h2 class="type">{{coffee.type}}</h2>
+                <h2 class="price">{{coffee.price}}kr</h2>
+            </div>
+            <div class="coffee-info">
+                <p>{{coffee.info}}</p>
+            </div> 
+        </div>   
+      </li>
+      </ul> 
   </div>
 </template>
 
@@ -19,6 +28,38 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
-</style>
+.menu-container {
+
+    width: 90%;
+
+    .menu-item {
+        display: flex;
+        flex-direction: column;
+
+        .wrap {
+
+            .type-price {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .type, .price {
+                    font-size: 1.2em;
+                }
+            }
+
+            .coffee-info {
+                display: flex;
+
+                p {
+                    font-size: 0.8em;
+                    margin-top: -15px;
+                }
+            }
+        }
+    }
+}
+
+</style>>
