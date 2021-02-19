@@ -8,12 +8,14 @@ button{
     padding: 0 10%;
     cursor: pointer;
 
-    .black {
+    .brown {
         color: white;
+        background-color: $airbean_brown;
     }
 
     .white {
         color: black;
+        background-color: white;
     }
 
     h4 {

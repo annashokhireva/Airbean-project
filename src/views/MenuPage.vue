@@ -1,16 +1,16 @@
 <template>
 
-<div id="MenuPage">
-
 	<div class="product-menu">
-		<main-header :show-bag="true"/>
+		<main-header :showBag="true"/>
+		<main>
 			<h1>Meny </h1>
 			<h1>Count - {{count}}</h1>
-		<button @click="increment">Increment</button>
+			<button @click="increment">Increment</button>
+		</main>
+			
 	
 		<main-footer />	
 	</div>
-</div>
 	
 </template>
 
@@ -40,7 +40,7 @@ export default {
 	}
 
 	main {
-		height: fit-content;
+		height: 100%;
 		padding: 0 10%;
 		text-align: left;
 	}

@@ -5,6 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
 	state: {
+		bagItems: ['test item', 'test item'],
 		navVissible: false
 	},
 	mutations: {

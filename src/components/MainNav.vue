@@ -10,12 +10,11 @@
 					<h2>{{ link.text }}</h2>
 				</router-link>
 			</li>
-			<!-- <div class="lines">
-				<div class="line"></div>
-				<div class="line"></div>
-				<div class="line"></div>
-			</div> -->
-			
+
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+
 		</ul>
 
 	</nav>
@@ -101,19 +100,26 @@
 		font-size: $h_normal;	
 	}
 
-	// .lines {
-	// 	display: flex;
-	// 	flex-direction: column;
-	// 	height: 220px;
-	// 	width: 100%;
-	// 	position: absolute;
-	// 	top: 15%;
+	
 
-	// 	.line {
-	// 		margin: auto;
-	// 		width: 48px;
-	// 		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-	// 	}
-	// }
+	.line {
+		margin: auto;
+		width: 48px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		position: relative;
+
+		&:nth-of-type(1){
+			top: -71%;
+		}
+
+		&:nth-of-type(2){
+			top: -48%;
+		}
+
+		&:nth-of-type(3){
+			top: -26%;
+		}
+	}
+
 	
 </style>
