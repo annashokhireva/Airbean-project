@@ -1,7 +1,7 @@
 <template>
 	<div class="shopping-bag">
-		<div v-if="items.length > 0" class="circle">
-			{{ items.length }}
+		<div v-if="cartItemsCount.length > 0" class="circle">
+			{{ cartItemsCount.length }}
 		</div>
 		<img src="../assets/bag.svg" alt="shopping bag">
 	</div>
@@ -10,16 +10,17 @@
 
 <script>
 export default {
-	data() {
-		return {
-			items: []
-		}
-	},
 
 	props: {
 		showAmount: {
 			type: Boolean,
 			default: false
+		}
+	},
+
+	computed: {
+		cartItemsCount: function() {
+			return this.$store.state.cart;
 		}
 	}
 }

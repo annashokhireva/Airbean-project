@@ -7,6 +7,8 @@ export default new Vuex.Store({
 	state: {
 		showNav: false,
 
+		cart: [],
+
 		coffeeTypes: [
 
 			{
@@ -56,6 +58,10 @@ export default new Vuex.Store({
 	getters: {
 		coffeeTypes: state => {
 			return state.coffeeTypes;
+		},
+
+		cartItems: state => {
+			return state.cart;
 		}
 	},
 	mutations: {},

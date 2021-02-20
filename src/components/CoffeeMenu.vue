@@ -3,7 +3,8 @@
       <ul class="menu-list"> 
       <li class="menu-item" v-for="coffee in coffeeTypes" :key="coffee.id">
           <div class="wrap">
-            <img src="../assets/add.svg" alt="add" width="64px" height="64px">  
+            <img src="../assets/add.svg" alt="add" width="64px" height="64px"
+            @click="addToCart(coffee)">  
             <div class="type-price">
                 <h2 class="type">{{coffee.type}}</h2>
                 <h2 class="price">{{coffee.price}}kr</h2>
@@ -23,6 +24,13 @@ export default {
     computed: {
         coffeeTypes: function() {
             return this.$store.getters.coffeeTypes;
+        }
+    },
+
+    methods: {
+        addToCart(coffee) {
+            this.$store.state.cart.push(coffee);
+            console.log(this.$store.state.cart)
         }
     }
 }
