@@ -1,14 +1,14 @@
 <template>
 	<div class="shopping-bag" >
 		<div class="shadow"></div>
-		<div v-if="items.length > 0" class="circle">
-			{{ items.length }}
+		<div v-if="cartItemsCount.length > 0" class="circle">
+			{{ cartItemsCount.length }}
 		</div>
 		<img class="icon" src="../assets/bag.svg" alt="shopping bag" @click="toggleBag">
 	
 		<transition name="fade">
 			<ul v-if="visible" class="bag-view">
-				<h2 v-if="items.length <= 0" class="empty-bag">Your shopping bag is empty</h2>
+				<h2 v-if="cartItemsCount.length <= 0" class="empty-bag">Your shopping bag is empty</h2>
 				<h2 v-else>Din beställning</h2>
 				<div class="specification">
 					<li>
@@ -71,8 +71,11 @@ export default {
 	},
 
 	computed: {
-		items: function() {
-			return this.$store.state.bagItems;
+		// items: function() {
+		// 	return this.$store.state.bagItems;
+		// },
+		cartItemsCount: function() {
+			return this.$store.state.cart;
 		},
 		...mapState({
 			visible: 'bagVisible',
